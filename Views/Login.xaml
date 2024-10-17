@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calcivarS3B.Views.Login"
+             >
+    <VerticalStackLayout Spacing="25" Padding="25">
+        <Label 
+            Text="INICIO DE SESIÖN"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <!--<Image Source="	https://www.uisrael.edu.ec/wp-content/uploads/2023/01/logo-uisrael@2x-e1674848533171-2048x517.png" WidthRequest="250"/>-->
+        <Image Source="ecuador.png"  WidthRequest="150"/>
+
+        <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario" MaxLength="25"/>
+
+        <Entry x:Name="txtContrasena" Placeholder="Ingrese la contraseña" IsPassword="True"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnInciar" Text="INICIAR SESIÖN" Clicked="btnInciar_Clicked" Grid.Row="0" Grid.Column="0"/>
+            <Button x:Name="btnRegistrar" Text="REGISTRARSE" Clicked="btnRegistrar_Clicked" Grid.Row="0" Grid.Column="1"/>
+        </Grid>
+        
+
+    </VerticalStackLayout>
+</ContentPage>
